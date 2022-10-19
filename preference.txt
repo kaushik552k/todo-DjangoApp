@@ -1,0 +1,1 @@
+My preference is Django framework as it provides many out of the box features. Mapping of URL to views and support function is allowed through a request. Thats all about my opinion.
