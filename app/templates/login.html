@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+  label{
+    width: 20%;
+  }
+</style>
+<div class="container pt-4">
+  <div class="col-lg-4 mx-auto shadow p-0 mt-4">
+    <div class="alert alert-info">
+      <h2>Login here</h2>
+    </div>
+    <div class="p-4">
+      <form action="/login/" method="POST">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <hr />
+        <div class="d-flex">
+          <input type="submit" value="Login" class="btn btn-info" />
+          <a  href="/signup" class="btn btn-info ms-auto">Click here to register</a>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
